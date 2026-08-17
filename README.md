@@ -1,2 +1,2 @@
 # Lianguagem_C
-Estudos direcionados na linguagem C para a materia de Introdução a Programação na UFAPe
+Estudos direcionados na linguagem C para a matéria de Introdução a Programação na UFAPE.
