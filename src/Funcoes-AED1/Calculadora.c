@@ -6,25 +6,29 @@ float Globalresultado = 0;
 // função soma
 void sum (float a, float b) {
     Globalresultado = a + b;
-    printf("%.1f", &Globalresultado);
+    printf("%.1f", Globalresultado);
 }
 
 // função subtração
 void sub (float a,float b) {
     Globalresultado = a - b;
-    printf("%.1f", &Globalresultado);
+    printf("%.1f", Globalresultado);
 }
 
 // função multiplicação
 void mult (float a, float b) {
     Globalresultado = a * b;
-    printf("%.1f", &Globalresultado);
+    printf("%.1f", Globalresultado);
 }
 
 // função divisao
 void div (float a,float b) {
-    Globalresultado = a / b;
-    printf("%.1f", &Globalresultado);
+    if(b == 0) {
+        printf("não é possivel dividir por zero!");
+    } else {
+        Globalresultado = a / b;
+        printf("%.1f", Globalresultado);
+    }
 }
 
 int main(){
@@ -32,9 +36,9 @@ int main(){
     int cont;
     // implementando valores
     printf("Digite um valor:");
-    scanf("%d", &a);
+    scanf("%f", &a);
     printf("Digite outro valor:");
-    scanf("%d", &b);
+    scanf("%f", &b);
 
     // switch para escolher a operação da calculadora
     printf("Digite 1 - soma\nDigite 2 - subtracao\nDigite 3 - multiplicacao\nDigite 4 - divisao\nEscolha: ");
